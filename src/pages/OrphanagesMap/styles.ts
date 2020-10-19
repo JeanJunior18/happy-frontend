@@ -37,6 +37,34 @@ export const Container = styled.div`
 
   }
 
+  .map-popup{ 
+    .leaflet-popup-content-wrapper {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      box-shadow: none;
+    }
+
+    .leaflet-popup-content {
+      color: #0089a5;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 9px 12px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        width: 40px;
+        height: 40px;
+        background-color: #15c3d6;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+
   .leaflet-container {
     z-index: 5;
   }
